@@ -1,0 +1,65 @@
+---
+title: Installation
+description: Install and configure DocFlow AI locally.
+---
+
+Before starting, make sure your development environment is ready.
+
+## Requirements
+
+You need:
+
+- Node.js
+- npm
+- Git
+- Docker
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-name/docflow-ai.git
+cd docflow-ai
+npm install
+```
+
+## Redis Example
+
+```javascript
+import { createClient } from "redis";
+
+const redis = createClient();
+
+await redis.connect();
+
+await redis.set("framework", "Next.js");
+
+const value = await redis.get("framework");
+
+console.log(value);
+```
+
+## Docker Example
+
+```dockerfile
+FROM node:22-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "dev"]
+```
+
+## Environment Variables
+
+```bash
+REDIS_URL=redis://localhost:6379
+```
+
+## Start Development Server
+
+Run `npm run dev` to start DocFlow AI.

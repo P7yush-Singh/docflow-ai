@@ -2,7 +2,10 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import RightSidebar from "./RightSidebar";
 
-export default function AppLayout({ children }) {
+export default function AppLayout({
+  children,
+  headings = [],
+}) {
   return (
     <>
       <Navbar />
@@ -14,7 +17,7 @@ export default function AppLayout({ children }) {
           {children}
         </section>
 
-        <RightSidebar />
+        <RightSidebar headings={headings} />
       </main>
     </>
   );

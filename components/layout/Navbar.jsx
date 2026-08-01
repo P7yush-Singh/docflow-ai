@@ -15,7 +15,7 @@ export default function Navbar() {
 
             <div className="hidden items-center gap-6 md:flex">
               <Link
-                href="/docs"
+                href="/docs/introduction"
                 className="text-sm font-medium text-zinc-600 transition hover:text-black dark:text-zinc-400 dark:hover:text-white"
               >
                 Docs
