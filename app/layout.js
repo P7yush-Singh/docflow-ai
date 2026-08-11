@@ -12,15 +12,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  title: "DocFlow - AI",
+  description: "DocFlow is an AI-powered document management and collaboration platform that helps teams streamline their workflows and improve productivity.",
   icons: {
     icon: '/1786450763698.png', // Or the exact path/name of your custom icon
   },
-};
-
-
-export const metadata = {
-  title: "DocFlow - AI",
-  description: "DocFlow is an AI-powered document management and collaboration platform that helps teams streamline their workflows and improve productivity.",
 };
 
 export default function RootLayout({ children }) {
